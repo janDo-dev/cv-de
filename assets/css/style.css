@@ -113,6 +113,14 @@ p {
   border-color: #fff;
 }
 
+a .link-arrow {
+  transition: transform 300ms;
+}
+
+a:hover .link-arrow {
+  transform: translateX(5px);
+}
+
 .site-header,
 .site-section {
   padding: 5rem;
@@ -137,14 +145,49 @@ p {
   color: #fff;
 }
 
+.profile-img-container {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
 .profile-img {
   position: relative;
   width: 200px;
   border-radius: 100%;
   border: 5px solid #fff;
   background-color: #fff;
-  margin-bottom: 1.5rem;
   z-index: 10;
+}
+
+.contact-data {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  transform: translateY(calc(50% - 5px));
+}
+
+.contact-circle {
+  background-color: var(--accent-color);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  line-height: 1;
+  padding: 0.7rem;
+}
+
+.contact-circle:hover {
+  background-color: var(--secondary);
+}
+
+.contact-circle:first-of-type,
+.contact-circle:last-of-type {
+  transform: translateY(-50%);
+}
+
+.contact-icon {
+  font-size: 1.3rem;
 }
 
 .intro-sub-headline {
@@ -165,6 +208,7 @@ p {
 .nav-main-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -175,6 +219,7 @@ p {
   border: 3px solid;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 1rem;
   margin-right: 1rem;
   transition: background-color 300ms, color 300ms, border-color 300ms;
 }
@@ -251,7 +296,7 @@ p {
 .tech-skill {
   position: relative;
   background-color: #fff;
-  flex-basis: calc(100% / 5 - 1.5rem);
+  flex-basis: calc(100% / 4 - 1.5rem);
   padding: 3rem;
   border-radius: 10px;
   border-bottom: 5px solid rgba(0, 0, 0, 0.15);
@@ -259,12 +304,17 @@ p {
   margin: 0 0.75rem 1.5rem 0.75rem;
 }
 
+.tech-skill .skill-icon {
+  margin-bottom: 1rem;
+}
+
 .tech-skill:hover {
   background: var(--bg-gradient);
   border-color: transparent;
 }
 
-.tech-skill:hover .skill-icon {
+.tech-skill:hover .skill-icon,
+.tech-skill:hover .skill-title {
   color: #fff;
 }
 
@@ -291,25 +341,21 @@ p {
   color: var(--main-color);
 }
 
-.contact-data {
-  line-height: 2;
-}
-
-.contact-icon {
-  color: var(--main-color);
-  margin-right: 0.5rem;
-}
-
 .site-footer {
   background-color: var(--text-color);
   color: #fff;
   padding: 1.5rem 5rem;
   text-align: center;
+  line-height: 2;
 }
 
-@media screen and (max-width: 1200px) {
+.site-footer a {
+  color: #fff;
+}
+
+@media screen and (max-width: 980px) {
   .tech-skill {
-    flex-basis: calc(100% / 3 - 1.5rem);
+    flex-basis: calc(100% / 2 - 1.5rem);
   }
 }
 
@@ -352,6 +398,19 @@ p {
 
   .tech-skill {
     flex-basis: 100%;
-    margin-right: 0;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .soft-skill {
+    width: 100%;
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .job {
+    padding: 1rem;
   }
 }

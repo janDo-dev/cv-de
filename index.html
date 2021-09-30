@@ -18,11 +18,39 @@
   </head>
   <body>
     <header class="site-header">
-      <img
-        class="profile-img"
-        src="./assets/img/jan-donath.jpg"
-        alt="Jan Donath"
-      />
+      <div class="profile-img-container">
+        <img
+          class="profile-img"
+          src="./assets/img/jan-donath.jpg"
+          alt="Jan Donath"
+        />
+        <div class="contact-data">
+          <a
+            class="contact-circle"
+            href="tel:+491629404797"
+            title="Jan anrufen"
+          >
+            <i class="contact-icon fas fa-phone-alt"></i>
+          </a>
+
+          <a
+            class="contact-circle"
+            href="mailto:jnd@jndnth.de"
+            title="E-Mail an jnd@jndnth.de"
+          >
+            <i class="contact-icon fas fa-at"></i>
+          </a>
+
+          <a
+            class="contact-circle"
+            href="https://github.com/janDo-dev"
+            target="_blank"
+            title="Jan auf GitHub"
+          >
+            <i class="contact-icon fab fa-github"></i>
+          </a>
+        </div>
+      </div>
 
       <h1>Aloha, ich bin Jan<span class="text-accent">.</span></h1>
       <p class="intro-sub-headline">
@@ -33,7 +61,7 @@
           class="text-accent"
           >.</span
         >
-        Sammelkartensammler<span class="text-accent">.</span>
+        Trading Cards Sammler<span class="text-accent">.</span>
       </p>
       <p class="intro-text">
         Ich nehme zur Zeit an einem Bootcamp von
@@ -56,23 +84,20 @@
             <a href="#profile" title="Profil">Profil</a>
           </li>
           <li class="nav-main-item">
-            <a href="#experience" title="Erfahrung">Erfahrung</a>
-          </li>
-          <li class="nav-main-item">
             <a href="#skills" title="Fähigkeiten">Fähigkeiten</a>
           </li>
           <li class="nav-main-item">
-            <a href="#contact" title="Kontakt">Kontakt</a>
-          </li>
-          <li class="nav-main-item">
-            <a
-              href="./assets/cv/lebenslauf_jan-donath_frontend-developer.pdf"
-              target="_blank"
-              title="Download Lebenslauf als PDF"
-              >Lebenslauf als PDF</a
-            >
+            <a href="#experience" title="Erfahrung">Erfahrung</a>
           </li>
         </ul>
+        <a
+          href="./assets/cv/lebenslauf_jan-donath_frontend-developer.pdf"
+          target="_blank"
+          title="Download Lebenslauf als PDF"
+        >
+          Lebenslauf als PDF
+          <i class="link-arrow fas fa-long-arrow-alt-right"></i>
+        </a>
       </nav>
     </header>
 
@@ -85,20 +110,23 @@
           Auch wenn ich dafür hauptsächlich WordPress und Elementor verwendet
           habe, habe ich dabei viel über die Webentwicklung als Ganzes gelernt.
           Irgendwann verspürte ich den Drang, eigenhändig zu programmieren. Also
-          habe ich angefangen HTML, CSS, JavaScript und die Grundlagen von VueJS
+          habe ich angefangen <span class="text-bold">HTML</span>,
+          <span class="text-bold">CSS</span>,
+          <span class="text-bold">JavaScript</span> und die Grundlagen von
+          <span class="text-bold">VueJS</span>
           von Grund auf neu zu lernen.
         </p>
 
         <p class="copytext">
-          Derzeit besuche ich ein Coding Bootcamp, um meine autodidaktischen
-          Fähigkeiten zu festigen, neue Dinge, wie fortgeschrittenes JavaScript,
-          VueJS und NodeJS zu lernen und um als Frontend-Entwickler zu wachsen.
+          <span class="text-bold">Derzeit besuche ich ein Coding Bootcamp</span
+          >, um meine autodidaktischen Fähigkeiten zu festigen, neue Dinge, wie
+          fortgeschrittenes JavaScript, VueJS und NodeJS zu lernen und um als
+          Frontend-Entwickler zu wachsen.
         </p>
 
         <p class="copytext">
-          Ich suche ein Unternehmen, das daran interessiert ist, mir eine Chance
-          zu geben, meine Fähigkeiten einzusetzen und mich dabei zu
-          unterstützen, ein besserer Entwickler zu werden.
+          Ich suche ein Unternehmen, in dem ich meine Fähigkeiten einbringen und
+          erweitern kann, in dem ich als Entwickler weiterhin wachsen kann.
           <br /><br />
           <span class="text-bold text-accent text-bigger">
             Ich freue mich von Dir zu hören.
@@ -112,23 +140,23 @@
           <h2>Technische Fähigkeiten</h2>
           <div class="tech-skills-container">
             <article class="tech-skill">
-              <i class="skill-icon fab fa-html5"></i>
+              <i class="skill-icon fab fa-html5"></i><br />
+              <span class="skill-title">HTML5</span>
             </article>
 
             <article class="tech-skill">
-              <i class="skill-icon fab fa-css3-alt"></i>
+              <i class="skill-icon fab fa-css3-alt"></i><br />
+              <span class="skill-title">CSS / SCSS</span>
             </article>
 
             <article class="tech-skill">
-              <i class="skill-icon fab fa-sass"></i>
+              <i class="skill-icon fab fa-js-square"></i><br />
+              <span class="skill-title">JavaScript</span>
             </article>
 
             <article class="tech-skill">
-              <i class="skill-icon fab fa-js-square"></i>
-            </article>
-
-            <article class="tech-skill">
-              <i class="skill-icon fab fa-github"></i>
+              <i class="skill-icon fab fa-github"></i><br />
+              <span class="skill-title">Git / GitHub</span>
             </article>
           </div>
         </section>
@@ -162,9 +190,7 @@
             Bei CONSTRACTIV habe ich die Chance bekommen, die Firmenwebsite mit
             HTML, CSS , JavaScript und PHP zu entwickeln. Außerdem arbeitete ich
             an einer kleinen Angular Web App und habe einige QA und UI / UX
-            Arbeiten für bestehende Projekte durchgeführt. Trotz dem, dass meine
-            Zeit bei CONSTRACTIV recht kurz war, habe ich eine Menge neue Dinge
-            gelernt und bin daher sehr dankbar für meine Zeit dort.
+            Arbeiten für bestehende Projekte durchgeführt.
           </p>
         </article>
 
@@ -237,33 +263,32 @@
           </p>
         </article>
       </section>
-
-      <section id="contact" class="site-section contact-section">
-        <h1>Kontakt<span class="text-accent">.</span></h1>
-        <p class="contact-data">
-          <i class="contact-icon fas fa-phone-alt"></i>
-          <a href="tel:+491629404797" title="Jan anrufen"> 0162 9404797 </a>
-          <br />
-          <i class="contact-icon fas fa-at"></i>
-          <a href="mailto:jnd@jndnth.de" title="E-Mail an jnd@jndnth.de">
-            jnd@jndnth.de
-          </a>
-          <br />
-          <i class="contact-icon fab fa-github"></i>
-          <a
-            href="https://github.com/janDo-dev"
-            target="_blank"
-            title="Jan auf GitHub"
-          >
-            GitHub
-          </a>
-        </p>
-      </section>
     </main>
 
     <footer class="site-footer">
-      Erstellt mit <i class="fas fa-heart" title="Love"></i> and
-      <i class="fas fa-coffee" title="Coffee"></i>
+      <p>
+        Erstellt mit <i class="fas fa-heart" title="Love"></i> and
+        <i class="fas fa-coffee" title="Coffee"></i>
+      </p>
+      <p class="contact-links">
+        <a href="tel:+491629404797" title="Jan anrufen">
+          <i class="contact-icon fas fa-phone-alt"></i> 0162 9404797
+        </a>
+        <br />
+
+        <a href="mailto:jnd@jndnth.de" title="E-Mail an jnd@jndnth.de">
+          <i class="contact-icon fas fa-at"></i> jnd@jndnth.de
+        </a>
+        <br />
+
+        <a
+          href="https://github.com/janDo-dev"
+          target="_blank"
+          title="Jan auf GitHub"
+        >
+          <i class="contact-icon fab fa-github"></i> GitHub
+        </a>
+      </p>
     </footer>
   </body>
 </html>
