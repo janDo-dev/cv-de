@@ -227,7 +227,7 @@ p {
   align-items: center;
   border-bottom: 5px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--light-grey);
   width: 60%;
   padding: 3rem;
   margin-bottom: 3rem;
@@ -250,7 +250,7 @@ p {
 
 .tech-skill {
   position: relative;
-  background: var(--light-grey);
+  background-color: #fff;
   flex-basis: calc(100% / 5 - 1.5rem);
   padding: 3rem;
   border-radius: 10px;
@@ -277,7 +277,7 @@ p {
 }
 
 .soft-skill {
-  background-color: var(--light-grey);
+  background-color: #fff;
   font-weight: 700;
   line-height: 1;
   border-radius: 5px;
