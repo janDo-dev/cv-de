@@ -353,6 +353,10 @@ a:hover .link-arrow {
   color: #fff;
 }
 
+.site-footer p {
+  margin-bottom: unset;
+}
+
 @media screen and (max-width: 980px) {
   .tech-skill {
     flex-basis: calc(100% / 2 - 1.5rem);
