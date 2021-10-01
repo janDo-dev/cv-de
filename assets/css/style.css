@@ -349,12 +349,12 @@ a:hover .link-arrow {
   line-height: 2;
 }
 
-.site-footer a {
-  color: #fff;
-}
-
 .site-footer p {
   margin-bottom: unset;
+}
+
+.site-footer a {
+  color: #fff;
 }
 
 @media screen and (max-width: 980px) {
